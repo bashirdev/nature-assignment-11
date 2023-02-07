@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap')
+
+  body{
+   margin:0;
+   padding:0;
+   box-sizing:border-box;
+  }
+  
+  /* body::-webkit-scrollbar {
+   display: none; 
+} */
+  :root{
+      --primary-color:#28377e;
+      --secondary-color:#f2622c;
+      --text-color:#ffffff;
+      --text-p:#b0b0b1;
+      --button-color:#D94948;
+  }
+  /* initial setting */
+  a{
+   text-decoration:none;
+  }
+  p{
+   padding:0;
+   margin:0;
+  }
+  ul li{
+   list-style:none
+  }
+
+  h1, h2, h3,h4,h5,h6{
+   margin:0;
+  }
+ 
+
+   .home{
+      background-image:url("../Photos/elephnat.jpg");
+      background-position:center center;
+      background-size:cover;
+      background-repeat:no-repeat;
+      width:100%;
+      height:150vh;
+      background-attachment:fixed;
+      position:relative;
+    
+   }
+ 
+   nav ul li a{
+      font-family:"Monsarate", sans-serif;
+      color:var(--text-color) !important;
+      margin-left:30px;
+      font-family: inherit;
+      font-size:18px;
+      font-weight:400 !important;
+   }
+   nav ul li .btn-action{
+      background-color:var(--button-color);
+      border-radius: 100px;
+      width:100%;
+      text-align:center;
+      padding-top: 16px;
+      padding-right: 60px;
+      padding-bottom: 16px;
+      padding-left: 60px;
+      font-family: inherit;
+      font-weight: 700;
+      line-height: 1em;
+   }
+
+
+.hero-content{
+   position:absolute;
+   top:50%;
+   left:50%;
+   transform:translate(-50%, -50%);
+}
+.hero-content .hero-text h1{
+   font-size:4.6rem !important;
+   line-height: 1.4em;
+   color:var(--text-color);
+   text-transform:uppercase;
+   font-family:"Monsarate", sans-serif;
+   font-weight:700;
+}
+.hero-content .hero-text h4{
+   line-height: 1.4em;
+   color:var(--text-color);
+   font-family:"Monsarate", sans-serif !important;
+   font-weight:700;
+}
+
+.hero-content .hero-text .btn-action{
+   background-color:var(--button-color);
+   border:1px solid var(--button-color);
+   color:var(--text-color);
+   margin-top:50px;
+   border-radius: 100px;
+   width:auto;
+   text-align:center;
+   padding-top: 16px;
+   padding-right: 32px;
+   padding-bottom: 16px;
+   padding-left: 32px;
+   font-family: inherit;
+   font-weight: 700;
+   line-height: 1em;
+}
+
+
+.down-arrow{
+   position:absolute;
+   bottom:5%;
+   left:50%;
+   transform:translate(-50%, -50%);
+   cursor:pointer;
+}
+.down-arrow i{
+  color:var(--text-color);
+  font-size:2rem;
+}
+
+
+
+
+.about-us{
+   position:relative;
+   padding:150px 0;
+   text-align:center;
+   width:100%;
+}
+.about-us .about-content h2{
+   display:block;
+   line-height: 1.2em;
+   color:#000;
+   text-align:center;
+   font-size:2.2766666666667rem;
+   font-family: 'Montserrat',sans-serif;
+   margin:0 auto;
+  
+ 
+}
+.about-us .about-content .text-p{
+  max-width:800px;
+  position:relative;
+  margin:0 auto;
+}
+.about-us .about-content .text-p p{
+  letter-spacing:1px;
+  padding-bottom:50px;
+  
+}
