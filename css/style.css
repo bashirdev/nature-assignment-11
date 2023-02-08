@@ -156,7 +156,7 @@
 
 
 
-/* service css start */
+
 .service{
    background-image:url("../Photos/beach.jpg");
    background-position:center center;
@@ -186,9 +186,7 @@
   padding-left:100px;
 }
 
-/* service css end */
 
-/* project css */
 
 .project{
    padding:100px 0;
@@ -210,7 +208,7 @@
    color:#8e8e8e;
 }
 
-/* project css end */
+
 
 
 .learn-more{
