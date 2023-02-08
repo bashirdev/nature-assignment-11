@@ -3,15 +3,20 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Nature</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- AniCollection.css library -->
+     <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
+  
+
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
 
     <!-- https://websitedemos.net/sierra-nature-02/ -->
+    <!-- http://anijs.github.io/examples/scrollreveal/ -->
   <section class="home">
     <div class="container">
       <!-- nav start -->
@@ -21,13 +26,14 @@
             <img src="./Photos/logo.svg" alt="" srcset="">
          </a>
          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-           <span class="navbar-toggler-icon"></span>
+          <i class="fa-solid fa-bars-staggered"></i>
+           <!-- <span class="navbar-toggler-icon"></span> -->
          </button>
          <div class="collapse navbar-collapse" id="navbarSupportedContent">
            <ul class="navbar-nav  mb-2 mb-lg-0 ms-auto py-4">
           
              <li class="nav-item">
-               <a class="nav-link " aria-current="page" href="#">Home</a>
+               <a class="nav-link active" aria-current="page" href="#">Home</a>
              </li>
              <li class="nav-item">
                <a class="nav-link" href="#">About</a>
@@ -55,11 +61,13 @@
    <div class="container hero-content">
       <div class="row">
           <div class="col-md-12   text-center justify-content-center align-content-center">
-            <div class="hero-text">
+            <div class="hero-text" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal"  >
               <h4>Welcome To</h4>
-              <h1>SIERRA NATURAL PARK</h1>
+              <h1  class="py-3" >SIERRA NATURAL PARK</h1>
                
-                  <button class="btn-action">Learn More</button>
+                 <div class="hero-btn mt-5">
+                    <a href="http://" class="btn-action">Learn More</a>
+                 </div>
                 
             </div>
           </div>
@@ -70,7 +78,7 @@
    </div>
   </section>  
   <!-- About section -->
-<section class="about-us">
+<section data-anijs="if: scroll, on:window, do: rollIn animated, before: scrollReveal, after: removeAnim" class="about-us">
    <div class="container">
         <div class="row">
            <div class="col-md-12 ">
@@ -91,8 +99,8 @@
    
 <section class="service">
   <div class="container">
-    <div class="row gx-5 gy-4">
-        <div class="col-md-6">
+    <div class="row gx-5 gy-4" data-anijs="if: scroll, on: window, do: swing animated, before: scrollReveal">
+        <div class="col-md-6" >
            <h4>Service</h4>
            <h3>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Ut Elit Tellus, Luctus Nec Ullamcorper.</h3>
            <hr>
@@ -119,28 +127,28 @@
 <!-- Service End -->
 
   <!-- Project section -->
-  <section class="project">
+  <section data-anijs="if: scroll, on:window, do: rollIn animated, before: scrollReveal, after: removeAnim"  class="project">
     <div class="container">
     <div class="text-center">
       <h4>Project</h4> 
       <h2>Forest Wilderness</h2>
     </div>
          <div class="row mt-5">
-            <div class="col-md-4 ">
-             <div class="item">
+            <div class="col-md-4 " data-anijs="if: scroll, on: window, do: bounceInLeft animated, before: scrollReveal">
+             <div class="item"  >
                 <img src="./Photos/img-01.jpg" alt="" srcset="" class="img-fluid w-100">
                 <h4>Look Deep Into Nature</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
             </div>
          </div>
-            <div class="col-md-4 ">
+            <div class="col-md-4 " data-anijs="if: scroll, on: window, do: rotateIn animated, before: scrollReveal">
              <div class="item">
                 <img src="./Photos/img-02.jpg" alt="" srcset="" class="img-fluid w-100">
                 <h4>Just Living Is Not Enough </h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
             </div>
          </div>
-            <div class="col-md-4 ">
+            <div class="col-md-4" data-anijs="if: scroll, on: window, do: bounceInRight animated, before: scrollReveal">
              <div class="item">
                 <img src="./Photos/img-03.jpg" alt="" srcset="" class="img-fluid w-100">
                 <h4>Adopt The Pace Of Nature</h4>
@@ -160,13 +168,66 @@
            <h2>Get started with lorem ipsum dolor sit amet consectetur.</h2>
        </div>
        <div class="col-md-2">
-         <button class="btn-action">Learn More</button>
+         <a href="#" class="btn-action">Learn More</a>
        </div>
        
      </div>
    
 </div>
 </section>
+<div class="backToTop">
+  <a href="#">
+   <i class="fa-solid fa-circle-chevron-up"></i>
+</a>
+ </div> 
+<section class="footer">
+     <footer>
+         <div class="container">
+             <div class="row">
+                 <div class="col-md-5">
+                      <h5 class="mb-4">About</h5>
+                      <p class="pb-5">Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur.</p>
+                      <p>Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur.</p>
+                 </div>
+                 <div class="col-md-7">
+                      <div class="row justify-content-between">
+                          <div class="col-md-6">
+                               <h5 class="mb-4">Services</h5>
+                            
+                                <ul>
+                                    <li><a href="#">Study nature</a></li>
+                                    <li><a href="#">Nature is a gift</a></li>
+                                    <li><a href="#">A second spring</a></li>
+                                    <li><a href="#">Smiles of nature</a></li>
+                                    <li><a href="#">Just let it rain</a></li>
+                                </ul>
+                          </div>
+                          <div class="col-md-6">
+                              <h5 class="mb-4">Contact</h5>
+                                <p class="pb-5">Proin gravida nibh auctor aliquet amet anean sollicitudin, lorem quis.</p>
+
+                                <p>12 Avenue, New York, NY 10160</p>
+                                 <p>+1 910-626-85255</p>
+                                 <p>contact@nature.com</p>
+                          </div>
+                      </div>
+                 </div>
+             </div>
+         </div>
+         <div class="container mt-5">
+             <div class="row">
+              <div class="col-md-6">
+                 <p>Copyright © 2023 Sierra Nature</p>
+              </div>
+              <div class="col-md-6 text-end">
+                 <p>Powered by Sierra Nature</p>
+              </div>
+             </div>
+         </div>
+     </footer>
+</section>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -190,6 +251,9 @@
     wow.init();
     </script>
 
+<script src="./js/anijs-min.js"></script>
+<script src="./js/anijs-helper-scrollreveal-min.js"></script>
     <script src="./js/style.js"></script>
+    
   </body>
 </html>
