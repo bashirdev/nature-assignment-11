@@ -394,6 +394,12 @@
       padding-left: 0;
   
 }
+.service .right-content{
+   padding-left:0;
+ }
+ .bottom-btn{
+   margin-top:50px;
+ }
 }
 @media (max-width:768px){
    nav{
@@ -409,6 +415,16 @@
       text-align:start;
       padding-left: 0;
 }
+.service .right-content{
+   padding-left:0;
+ }
+ .bottom-btn{
+   margin-top:50px;
+ }
+
+ footer{
+   text-align:center;
+ }
 }
 @media (max-width:375px){
    nav{
@@ -424,4 +440,13 @@
       text-align:start;
     padding-left: 0;
 }
+.service .right-content{
+   padding-left:0;
+ }
+ .item{
+   padding:10px 5px;
+ }
+ footer{
+   text-align:center;
+ }
 }
