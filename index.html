@@ -62,7 +62,7 @@
     <div class="hero-content">
       <div class="row">
           <div class="col-md-12 d-flex text-center justify-content-center align-items-center">
-            <div class="hero-text" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal"  >
+            <div class="hero-text" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal, after: removeAnim"  >
               <h4>Welcome To</h4>
               <h1  class="py-3" >SIERRA NATURAL PARK</h1>
                
@@ -103,7 +103,7 @@
    
 <section class="service">
   <div class="container">
-    <div class="row gx-5 gy-4" data-anijs="if: scroll, on: window, do: swing animated, before: scrollReveal">
+    <div class="row gx-5 gy-4" data-anijs="if: scroll, on: window, do: swing animated, before: scrollReveal, after: removeAnim">
         <div class="col-md-6" >
            <h4>Service</h4>
            <h3>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Ut Elit Tellus, Luctus Nec Ullamcorper.</h3>
@@ -131,7 +131,7 @@
 <!-- Service End -->
 
   <!-- Project section -->
-  <section data-anijs="if: scroll, on:window, do: rollIn animated, before: scrollReveal, after: removeAnim"  class="project">
+  <section   class="project">
     <div class="container">
     <div class="text-center">
       <h4>Project</h4> 
@@ -223,7 +223,7 @@
               <div class="col-md-6">
                  <p>Copyright © 2023 Sierra Nature</p>
               </div>
-              <div class="col-md-6 text-end">
+              <div class="col-md-6 text-end footer-right-text">
                  <p>Powered by Sierra Nature</p>
               </div>
              </div>
