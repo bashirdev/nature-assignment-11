@@ -6,9 +6,9 @@
    box-sizing:border-box;
   }
   
-  /* body::-webkit-scrollbar {
+  body::-webkit-scrollbar {
    display: none; 
-} */
+}
   :root{
       --primary-color:#28377e;
       --secondary-color:#f2622c;
