@@ -16,7 +16,10 @@
   <body>
 
     <!-- https://websitedemos.net/sierra-nature-02/ -->
+    <!-- implementations  plugin here-->
     <!-- http://anijs.github.io/examples/scrollreveal/ -->
+    <!-- https://github.com/Orlandster/wc-typed-js -->
+
   <header class="home">
     <div class="container">
       <!-- nav start -->
@@ -63,8 +66,11 @@
       <div class="row">
           <div class="col-md-12 d-flex text-center justify-content-center align-items-center">
             <div class="hero-text" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal, after: removeAnim"  >
-              <h4>Welcome To</h4>
-              <h1  class="py-3" >SIERRA NATURAL PARK</h1>
+              <h4 class="welcome">Welcome To</h4>
+              <wc-typed-js strings="awesome, brilliant" loop="true">
+                <h1 class="title py-3"  >SIERRA <span class="typing"></span>NATURAL PARK</h1>
+              </wc-typed-js>
+              
                
                  <div class="hero-btn mt-5">
                     <a href="http://" class="btn-action">Learn More</a>
@@ -135,7 +141,10 @@
     <div class="container">
     <div class="text-center">
       <h4>Project</h4> 
-      <h2>Forest Wilderness</h2>
+      <wc-typed-js strings="awesome, brilliant" loop="true">
+        <h2 class="projectanimation">Forest <span class="typing"></span> Wilderness</h2>
+      </wc-typed-js>
+     
     </div>
          <div class="row mt-5">
             <div class="col-md-4 py-4" data-anijs="if: scroll, on: window, do: bounceInLeft animated, before: scrollReveal">
@@ -257,7 +266,34 @@
 
 <script src="./js/anijs-min.js"></script>
 <script src="./js/anijs-helper-scrollreveal-min.js"></script>
-    <script src="./js/style.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+ const options = {
+  strings: ['welcome To', 'welcome To'],
+  typeSpeed: 100,
+  showCursor:false
+};
+
+ new Typed('.welcome', options);
+
+ const options2 = {
+  strings: ['SIERRA NATURAL','SIERRA NATURAL PARK'],
+  typeSpeed: 100,
+  showCursor:false
+};
+
+new Typed('.title', options2);
+
+ const options3 = {
+  strings: ['Forest Wilderness','Forest Wilderness'],
+  typeSpeed: 40,
+  showCursor:false
+};
+
+new Typed('.projectanimation', options3);
+
+</script> 
+<script src="./js/style.js"></script>
 
   </body>
 </html>
