@@ -17,11 +17,11 @@
 
     <!-- https://websitedemos.net/sierra-nature-02/ -->
     <!-- http://anijs.github.io/examples/scrollreveal/ -->
-  <section class="home">
+  <header class="home">
     <div class="container">
       <!-- nav start -->
       <nav class="navbar navbar-expand-lg  ">
-       <div class="container">
+     
          <a class="navbar-brand" href="#">
             <img src="./Photos/logo.svg" alt="" srcset="">
          </a>
@@ -30,7 +30,7 @@
            <!-- <span class="navbar-toggler-icon"></span> -->
          </button>
          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-           <ul class="navbar-nav  mb-2 mb-lg-0 ms-auto py-4">
+           <ul class="navbar-nav ms-auto py-4 ">
           
              <li class="nav-item">
                <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -54,13 +54,14 @@
            </ul>
           
          </div>
-       </div>
+     
      </nav>
-   </div>
+    </div>
       <!-- nav end -->
-   <div class="container hero-content">
+  <div class="container hero-container">
+    <div class="hero-content">
       <div class="row">
-          <div class="col-md-12 text-center justify-content-center align-content-center">
+          <div class="col-md-12 d-flex text-center justify-content-center align-items-center">
             <div class="hero-text" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal"  >
               <h4>Welcome To</h4>
               <h1  class="py-3" >SIERRA NATURAL PARK</h1>
@@ -73,11 +74,13 @@
           </div>
       </div>
     </div>
+  </div>
+
    <div class="down-arrow">
        <i class="fa-solid fa-arrow-down"></i>
    </div>
  
-  </section>  
+  </header>  
   <!-- About section -->
 <section data-anijs="if: scroll, on:window, do: rollIn animated, before: scrollReveal, after: removeAnim" class="about-us">
    <div class="container">
@@ -104,13 +107,13 @@
         <div class="col-md-6" >
            <h4>Service</h4>
            <h3>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Ut Elit Tellus, Luctus Nec Ullamcorper.</h3>
-           <hr>
+           <span></span>
            <h4>Study Nature, Love Nature</h4>
            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-           <hr>
+           <span></span>
            <h4>Autumn Is a Second Spring</h4>
            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-           <hr>
+           <span></span>
            <h4>Just Let It Rain</h4>
            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
         </div>
