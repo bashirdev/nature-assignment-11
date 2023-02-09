@@ -27,18 +27,18 @@ window.addEventListener("scroll", ()=>{
     }
 })
 
-let colors=['green', 'blue', 'purple', 'orange'];
+let colors=['green', 'blue', 'purple', 'orange','green', 'blue', 'purple', 'orange','green', 'blue', 'purple', 'orange','blue'];
 
 function changeColor(color) {
     setTimeout(function loop() {
         
       if (color.length) {
         document.querySelector('.backToTop').style.backgroundColor = color.shift();
-        setTimeout(loop, 2000);
+        setTimeout(loop, 4000);
       }
     
      
-    }, 2000);
+    }, 4000);
  
 
   }
