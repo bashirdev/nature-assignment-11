@@ -47,6 +47,16 @@ function changeColor(color) {
     setInterval(changeColor(colors), 3000);
   }
   start()
+
+
+  let tl=gsap.timeline();
+
+  tl.from('.logo', {duration:1.5, opacity:0, scale:0.3, ease:'back' })
+  tl.from('.nav-link', {duration:1, opacity:0,  y:"random(-200 - 200)", stagger:0.25})
+  tl.from('.logo', {duration:1, rotation:360 })
+
+
+  
   
   
 
